@@ -1,0 +1,226 @@
+* {
+    background-color: #191A20;
+}
+
+.rightIconsDiv {
+    position: absolute;
+    right: 8vw;
+    top: 2.5vh;
+    width: 13vh;
+    height: 98vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.leftBottomIcons {
+    position: absolute;
+    left: 1vw;
+    right: 50vw;
+    height: 10vh;
+    bottom: 1vh;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+#searchField,
+#searchField:focus {
+    color: white;
+    background-color: rgba(255, 255, 255, 0.1);
+    position: absolute;
+    left: 30vw;
+    right: 30vw;
+    top: 47vh;
+    bottom: 47vh;
+    border-radius: 1vh;
+    border: solid 1px white;
+    padding-left: 1vw;
+    outline: none;
+}
+
+.rightIcon {
+    width: 22vh;
+    height: 22vh;
+    margin-bottom: 2vh;
+    background-color: transparent;
+    animation: inRightIcon 0.7s;
+}
+
+.rightIcon:hover {
+    animation: outRightIcon 0.2s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes inRightIcon {
+    from {
+        transform: rotate(-45deg);
+    }
+    to {
+        transform: rotate(0deg)
+    }
+}
+
+@keyframes outRightIcon {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(-45deg)
+    }
+}
+
+button {
+    position: absolute;
+    padding: 0;
+    width: 4vh;
+    top: 47.5vh;
+    left: 71vw;
+    stroke: white;
+    border: none;
+    outline: none;
+}
+
+.iconLeft {
+    position: relative;
+    top: 1vh;
+    left: 1vw;
+    height: 8vh;
+    width: 8vh;
+    stroke: white;
+    stroke-width: 1px;
+    margin-right: 3vw;
+}
+
+.weird {
+    position: relative;
+    top: 1vh;
+    left: 1vw;
+    height: 8vh;
+    width: 8vh;
+    fill: white;
+    stroke-width: 1px;
+    margin-right: 3vw;
+}
+
+#discordIcon {
+    animation: inDiscord 1s;
+}
+
+#discordIcon:hover {
+    animation: outDiscord 0.5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes inDiscord {
+    from {
+        fill: rgb(172, 128, 241);
+        transform: rotate(45deg);
+    }
+    to {
+        fill: rgb(255, 255, 255);
+        transform: rotate(0deg)
+    }
+}
+
+@keyframes outDiscord {
+    from {
+        fill: rgb(255, 255, 255);
+        transform: rotate(0deg);
+    }
+    to {
+        fill: rgb(172, 128, 241);
+        transform: rotate(45deg)
+    }
+}
+
+#facebookIcon {
+    animation: inFacebook 1s;
+}
+
+#facebookIcon:hover {
+    animation: outFacebook 0.5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes inFacebook {
+    from {
+        stroke: rgb(87, 87, 241);
+        transform: rotate(45deg);
+    }
+    to {
+        fill: rgb(255, 255, 255);
+        transform: rotate(0deg)
+    }
+}
+
+@keyframes outFacebook {
+    from {
+        fill: rgb(255, 255, 255);
+        transform: rotate(0deg);
+    }
+    to {
+        stroke: rgb(87, 87, 241);
+        transform: rotate(45deg)
+    }
+}
+
+#whatsappIcon {
+    animation: inWhatsapp 1s;
+}
+
+#whatsappIcon:hover {
+    animation: outWhatsapp 0.5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes inWhatsapp {
+    from {
+        fill: greenyellow;
+        transform: rotate(45deg);
+    }
+    to {
+        fill: rgb(255, 255, 255);
+        transform: rotate(0deg)
+    }
+}
+
+@keyframes outWhatsapp {
+    from {
+        fill: rgb(255, 255, 255);
+        transform: rotate(0deg);
+    }
+    to {
+        fill: greenyellow;
+        transform: rotate(45deg)
+    }
+}
+
+#instaIcon {
+    animation: inInsta 1s;
+}
+
+#instaIcon:hover {
+    animation: outInsta 0.5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes inInsta {
+    from {
+        stroke: violet;
+        transform: rotate(45deg);
+    }
+    to {
+        fill: rgb(255, 255, 255);
+        transform: rotate(0deg)
+    }
+}
+
+@keyframes outInsta {
+    from {
+        fill: rgb(255, 255, 255);
+        transform: rotate(0deg);
+    }
+    to {
+        stroke: violet;
+        transform: rotate(45deg)
+    }
+}
